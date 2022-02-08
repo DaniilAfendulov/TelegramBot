@@ -17,6 +17,7 @@ namespace TelegramBot.Controllers
         }
 
         [Route("AddRequest")]
+        [HttpPost]
         public async Task<IActionResult> AddRequest()
         {
             // TODO: AddRequest
