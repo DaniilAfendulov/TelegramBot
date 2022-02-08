@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Telegram.Bot;
+using TelegramBot.Controllers;
 
 namespace TelegramBot
 {
@@ -39,7 +40,7 @@ namespace TelegramBot
             }
 
             app.UseRouting();
-            
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

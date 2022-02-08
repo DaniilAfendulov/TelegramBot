@@ -7,21 +7,22 @@ using Telegram.Bot;
 
 namespace TelegramBot.Controllers
 {
-    [Route("TelegramBot")]
-    public class RequestController : Controller
+    [ApiController]
+    [Route("telegram-bot")]
+    public class TelegramBotController : Controller
     {
         private TelegramBotClient _client;
-        public RequestController(TelegramBotClient client)
+        public TelegramBotController(TelegramBotClient client)
         {
             _client = client;
         }
 
-        [Route("AddRequest")]
+        [Route("job-request")]
         [HttpPost]
-        public async Task<IActionResult> AddRequest()
+        public async Task<IActionResult> JobRequest()
         {
             // TODO: AddRequest
-            return Ok();
+            return Ok("asdasd");
         }
     }
 }
