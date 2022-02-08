@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Telegram.Bot;
+using TelegramBot.Models;
 
 namespace TelegramBot.Controllers
 {
@@ -19,10 +20,10 @@ namespace TelegramBot.Controllers
 
         [Route("job-request")]
         [HttpPost]
-        public async Task<IActionResult> JobRequest()
+        public async Task<IActionResult> JobRequest([FromBody] JobRequest jobRequest)
         {
-            // TODO: AddRequest
-            return Ok("asdasd");
+            // TODO: job-request handler
+            return Ok();
         }
     }
 }
